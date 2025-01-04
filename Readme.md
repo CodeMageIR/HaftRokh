@@ -2,7 +2,7 @@
 
 <div align = "right">
 <div align = "center">
-<img alt="GitHub Release" src="https://img.shields.io/github/v/release/CodeMageIR/HaftRokh">
+<img alt="GitHub Release" src="https://img.shields.io/github/v/release/CodeMageIR/HaftRokh?v2">
 
 </div>
 
@@ -26,7 +26,7 @@
 
 ### دانلود
 
- • [آخرین نسخه](https://github.com/rastikerdar/vazirmatn/releases/latest)
+ • [آخرین نسخه](https://github.com/CodeMageIR/HaftRokh/releases/latest)
 
 <div align = "center">
 <h3>تصاویری از برنامه</h3> 
@@ -36,3 +36,6 @@
 
 ### فونت های استفاده شده
 • [وزیر](https://github.com/rastikerdar/vazirmatn)
+
+### تشکر
+•	تشکر از تمامی دوستانی که در مسیر ساخت این برنامه مارا یاری نمودند.
