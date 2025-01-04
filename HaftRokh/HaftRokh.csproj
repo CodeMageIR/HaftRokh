@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{416F6AAF-A162-413B-BE6C-D88491EBE34F}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HaftRokh</RootNamespace>
+    <AssemblyName>HaftRokh</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>calendar.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>8CC61DF07A2AB7A603EE0E4CC6ACC02FD324F698</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>TrayDate_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu.Licensing, Version=3.2.0.0, Culture=neutral, PublicKeyToken=f89b4760ba7dcb6b" />
+    <Reference Include="Bunifu.UI.WinForms.1.5.3">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuButton">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuRadioButton">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuRadioButton.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuSeparator">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuSeparator.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuToggleSwitch">
+      <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuToggleSwitch.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main.Designer.cs">
+      <DependentUpon>Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Settings.Designer.cs">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main.resx">
+      <DependentUpon>Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon2.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon3.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon4.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon5.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon6.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon7.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon8.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon9.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon10.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon11.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon12.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon13.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon14.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon15.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon16.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon17.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon18.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon19.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon20.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon21.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon22.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon23.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon24.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon25.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon26.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon27.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon28.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon29.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon30.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Icon31.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="calendar.ico" />
+    <None Include="Resources\telegram.png" />
+    <None Include="Resources\github.png" />
+    <None Include="Resources\envelope.png" />
+    <None Include="Resources\donate.png" />
+    <None Include="Resources\test.ico" />
+    <None Include="Resources\yek-shanbe.ico" />
+    <None Include="Resources\shanbe.ico" />
+    <None Include="Resources\se-shanbe.ico" />
+    <None Include="Resources\panj-shanbe.ico" />
+    <None Include="Resources\jome.ico" />
+    <None Include="Resources\do-shanbe.ico" />
+    <None Include="Resources\char-shanbe.ico" />
+    <None Include="Resources\Icondark31.ico" />
+    <None Include="Resources\Icondark30.ico" />
+    <None Include="Resources\Icondark29.ico" />
+    <None Include="Resources\Icondark28.ico" />
+    <None Include="Resources\Icondark27.ico" />
+    <None Include="Resources\Icondark26.ico" />
+    <None Include="Resources\Icondark25.ico" />
+    <None Include="Resources\Icondark24.ico" />
+    <None Include="Resources\Icondark23.ico" />
+    <None Include="Resources\Icondark22.ico" />
+    <None Include="Resources\Icondark21.ico" />
+    <None Include="Resources\Icondark20.ico" />
+    <None Include="Resources\Icondark19.ico" />
+    <None Include="Resources\Icondark18.ico" />
+    <None Include="Resources\Icondark17.ico" />
+    <None Include="Resources\Icondark16.ico" />
+    <None Include="Resources\Icondark15.ico" />
+    <None Include="Resources\Icondark14.ico" />
+    <None Include="Resources\Icondark13.ico" />
+    <None Include="Resources\Icondark12.ico" />
+    <None Include="Resources\Icondark11.ico" />
+    <None Include="Resources\Icondark10.ico" />
+    <None Include="Resources\Icondark9.ico" />
+    <None Include="Resources\Icondark8.ico" />
+    <None Include="Resources\Icondark7.ico" />
+    <None Include="Resources\Icondark6.ico" />
+    <None Include="Resources\Icondark5.ico" />
+    <None Include="Resources\Icondark4.ico" />
+    <None Include="Resources\Icondark3.ico" />
+    <None Include="Resources\Icondark2.ico" />
+    <None Include="Resources\Icondark1.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.8">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.8 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
