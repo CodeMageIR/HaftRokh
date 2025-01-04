@@ -4,7 +4,7 @@
   <description asmv2:iconFile="calendar.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="HaftRokh" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="HaftRokh" version="1.2.1.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="HaftRokh.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -140,13 +140,13 @@
   </dependency>
   <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaftRokh.exe" size="7954432">
-      <assemblyIdentity name="HaftRokh" version="1.2.0.0" language="neutral" processorArchitecture="msil" />
+      <assemblyIdentity name="HaftRokh" version="1.2.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Uit1KoEacV5skGpaClBUWzci9dtrZs4lyoM27IxKdUo=</dsig:DigestValue>
+        <dsig:DigestValue>474/iWKQbIf3rCheVX7HEzUQQD2xJDbSakzUZAE+Zfs=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
