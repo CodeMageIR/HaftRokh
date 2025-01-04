@@ -60,7 +60,7 @@ namespace HaftRokh
                         ButtonUpdate.Invoke((MethodInvoker)(() => ButtonUpdate.Visible = true));
                         LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Location = new Point(165, 478)));
                     }
-                    else if (Result > 0)
+                    else if (Result >= 0)
                     {
                         LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Text = "آخرین نسخه نرم افزار نصب  است."));
                         PictureBoxLoading.Invoke((MethodInvoker)(() => PictureBoxLoading.Visible = false));
