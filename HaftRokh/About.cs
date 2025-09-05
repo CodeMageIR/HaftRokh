@@ -24,6 +24,7 @@ namespace HaftRokh
         public About()
         {
             InitializeComponent();
+            (new Core.DropShadow()).ApplyShadows(this);
         }
         private JToken GithubData;
         private void About_Load(object sender, EventArgs e)
@@ -60,9 +61,15 @@ namespace HaftRokh
                         ButtonUpdate.Invoke((MethodInvoker)(() => ButtonUpdate.Visible = true));
                         LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Location = new Point(165, 478)));
                     }
-                    else if (Result >= 0)
+                    else if (Result == 0)
                     {
-                        LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Text = "آخرین نسخه نرم افزار نصب  است."));
+                        LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Text = "آپدیت جدیدی وجود ندارد."));
+                        PictureBoxLoading.Invoke((MethodInvoker)(() => PictureBoxLoading.Visible = false));
+                        LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Location = new Point(165, 478)));
+                    }
+                    else
+                    {
+                        LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Text = "نسخه آزمایشی نصب است."));
                         PictureBoxLoading.Invoke((MethodInvoker)(() => PictureBoxLoading.Visible = false));
                         LabelUpdateStatus.Invoke((MethodInvoker)(() => LabelUpdateStatus.Location = new Point(165, 478)));
                     }

@@ -28,11 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(About));
-            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
-            this.Elipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges3 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges4 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             this.Topbar = new Bunifu.UI.WinForms.BunifuPanel();
             this.LabelName = new System.Windows.Forms.Label();
             this.Exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
@@ -63,11 +61,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxEmail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBoxGithub)).BeginInit();
             this.SuspendLayout();
-            // 
-            // Elipse
-            // 
-            this.Elipse.ElipseRadius = 25;
-            this.Elipse.TargetControl = this;
             // 
             // Topbar
             // 
@@ -118,11 +111,11 @@
             this.Exit.ColorContrastOnClick = 45;
             this.Exit.ColorContrastOnHover = 45;
             this.Exit.Cursor = System.Windows.Forms.Cursors.Hand;
-            borderEdges2.BottomLeft = true;
-            borderEdges2.BottomRight = true;
-            borderEdges2.TopLeft = true;
-            borderEdges2.TopRight = true;
-            this.Exit.CustomizableEdges = borderEdges2;
+            borderEdges3.BottomLeft = true;
+            borderEdges3.BottomRight = true;
+            borderEdges3.TopLeft = true;
+            borderEdges3.TopRight = true;
+            this.Exit.CustomizableEdges = borderEdges3;
             this.Exit.DialogResult = System.Windows.Forms.DialogResult.None;
             this.Exit.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
             this.Exit.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(120)))), ((int)(((byte)(144)))), ((int)(((byte)(156)))));
@@ -250,12 +243,12 @@
             this.ButtonUpdate.ButtonTextMarginLeft = 0;
             this.ButtonUpdate.ColorContrastOnClick = 45;
             this.ButtonUpdate.ColorContrastOnHover = 45;
-            this.ButtonUpdate.Cursor = System.Windows.Forms.Cursors.Default;
-            borderEdges1.BottomLeft = true;
-            borderEdges1.BottomRight = true;
-            borderEdges1.TopLeft = true;
-            borderEdges1.TopRight = true;
-            this.ButtonUpdate.CustomizableEdges = borderEdges1;
+            this.ButtonUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges4.BottomLeft = true;
+            borderEdges4.BottomRight = true;
+            borderEdges4.TopLeft = true;
+            borderEdges4.TopRight = true;
+            this.ButtonUpdate.CustomizableEdges = borderEdges4;
             this.ButtonUpdate.DialogResult = System.Windows.Forms.DialogResult.None;
             this.ButtonUpdate.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
             this.ButtonUpdate.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
@@ -582,8 +575,6 @@
         }
 
         #endregion
-
-        private Bunifu.Framework.UI.BunifuElipse Elipse;
         private Bunifu.UI.WinForms.BunifuPanel Topbar;
         private System.Windows.Forms.Label Description;
         private System.Windows.Forms.Label LabelName;

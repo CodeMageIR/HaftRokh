@@ -36,6 +36,8 @@
             this.AboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.CopyToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TrayMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -47,23 +49,26 @@
             this.TrayIcon.Text = "Date";
             this.TrayIcon.Visible = true;
             this.TrayIcon.DoubleClick += new System.EventHandler(this.TrayIcon_DoubleClick);
+            this.TrayIcon.MouseClick += new System.Windows.Forms.MouseEventHandler(this.TrayIcon_MouseClick);
             // 
             // TrayMenu
             // 
             this.TrayMenu.Font = new System.Drawing.Font("Vazir", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TrayMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.CopyToolStripMenuItem,
             this.SettingToolStripMenuItem,
             this.AboutToolStripMenuItem,
+            this.toolStripSeparator1,
             this.exitToolStripMenuItem});
             this.TrayMenu.Name = "TrayMenu";
             this.TrayMenu.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.TrayMenu.ShowImageMargin = false;
-            this.TrayMenu.Size = new System.Drawing.Size(116, 70);
+            this.TrayMenu.Size = new System.Drawing.Size(116, 98);
             // 
             // SettingToolStripMenuItem
             // 
             this.SettingToolStripMenuItem.Name = "SettingToolStripMenuItem";
-            this.SettingToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.SettingToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.SettingToolStripMenuItem.Text = "تنظیمات";
             this.SettingToolStripMenuItem.Click += new System.EventHandler(this.SettingToolStripMenuItem_Click);
             // 
@@ -72,7 +77,7 @@
             this.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem";
             this.AboutToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.AboutToolStripMenuItem.ShowShortcutKeys = false;
-            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.AboutToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.AboutToolStripMenuItem.Text = "درباره  هفت‌رخ";
             this.AboutToolStripMenuItem.Click += new System.EventHandler(this.AboutToolStripMenuItem_Click);
             // 
@@ -82,7 +87,7 @@
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
             this.exitToolStripMenuItem.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
             this.exitToolStripMenuItem.ShowShortcutKeys = false;
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(115, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.exitToolStripMenuItem.Text = "خروج";
             this.exitToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.ExitToolStripMenuItem_Click);
@@ -92,6 +97,18 @@
             this.Timer.Enabled = true;
             this.Timer.Interval = 1000;
             this.Timer.Tick += new System.EventHandler(this.Timer_Tick);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(152, 6);
+            // 
+            // CopyToolStripMenuItem
+            // 
+            this.CopyToolStripMenuItem.Name = "CopyToolStripMenuItem";
+            this.CopyToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
+            this.CopyToolStripMenuItem.Text = "کپی تاریخ";
+            this.CopyToolStripMenuItem.Click += new System.EventHandler(this.CopyToolStripMenuItem_Click);
             // 
             // Main
             // 
@@ -112,12 +129,14 @@
         }
 
         #endregion
-        private System.Windows.Forms.NotifyIcon TrayIcon;
         private System.Windows.Forms.ContextMenuStrip TrayMenu;
         private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItem;
         private System.Windows.Forms.Timer Timer;
         private System.Windows.Forms.ToolStripMenuItem AboutToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem SettingToolStripMenuItem;
+        private System.Windows.Forms.NotifyIcon TrayIcon;
+        private System.Windows.Forms.ToolStripMenuItem CopyToolStripMenuItem;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
     }
 }
 

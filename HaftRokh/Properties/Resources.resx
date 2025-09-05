@@ -124,14 +124,20 @@
   <data name="test" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icondark30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icondark30.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon5" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icondark11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icondark30" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icondark30.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="donate" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\donate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icondark4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icondark4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon3" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -142,8 +148,14 @@
   <data name="char_shanbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\char-shanbe.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="caret-right (3)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caret-right (3).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="jome" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\jome.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icondark16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icondark16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="do_shanbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\do-shanbe.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -169,8 +181,8 @@
   <data name="Icon27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon27.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icondark1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icondark1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon28.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icondark21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark21.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -196,11 +208,14 @@
   <data name="Icon1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="telegram" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\telegram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="github" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\github.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icondark31" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark31.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon28" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon28.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon4" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,9 +241,6 @@
   <data name="Icondark17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark17.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icondark4" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icondark4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="Icon21" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon21.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -247,20 +259,20 @@
   <data name="Icondark13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon13" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icondark7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icondark7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icondark20" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark20.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="se_shanbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\se-shanbe.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icon6" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon23" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon23.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -274,11 +286,8 @@
   <data name="Icondark27" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark27.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="Icondark16" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icondark16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon31.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icondark24" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark24.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -304,8 +313,8 @@
   <data name="Icondark9" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icondark7" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icondark7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Icon6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -313,14 +322,20 @@
   <data name="Icon11" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Icon31" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Icon31.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="shanbe" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\shanbe.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Icon10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icon10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Icondark1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Icondark1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Icon17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon17.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="envelope" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\envelope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Icon19" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icon19.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -328,16 +343,100 @@
   <data name="Icondark10" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Icondark10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="donate" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\donate.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="caret-left" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\caret-left.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="envelope" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\envelope.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Red1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red1.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="github" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\github.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Red10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red10.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="telegram" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\telegram.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Red11" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red11.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red12" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red12.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red13" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red13.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red14" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red14.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red15" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red15.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red16" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red16.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red17" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red17.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red18" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red18.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red19" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red19.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red2.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red20" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red20.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red21.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red22" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red22.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red23" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red23.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red24" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red24.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red25" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red25.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red26" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red26.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red27" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red27.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red28" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red28.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red29" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red29.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red3.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red30" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red30.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red31" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red31.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red4" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red4.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red5" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red5.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red6" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red6.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red7" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red7.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red8.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Red9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Red9.ico;System.Drawing.Icon, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

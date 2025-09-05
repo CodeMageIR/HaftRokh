@@ -7,14 +7,14 @@
     <framework targetVersion="4.8" profile="Full" supportedRuntime="4.0.30319" />
   </compatibleFrameworks>
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="HaftRokh.exe.manifest" size="11437">
+    <dependentAssembly dependencyType="install" codebase="HaftRokh.exe.manifest" size="12884">
       <assemblyIdentity name="HaftRokh.exe" version="1.0.0.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cH8RVV0+UZ9y/8SbOqODKC8q5XI920WG66raBhr1suI=</dsig:DigestValue>
+        <dsig:DigestValue>wtM/g2ShyI0Anyw23OPCXtiuP7Ct4zy/UUhI3XEDZUk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

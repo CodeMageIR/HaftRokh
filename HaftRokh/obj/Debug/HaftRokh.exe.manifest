@@ -4,7 +4,7 @@
   <description asmv2:iconFile="calendar.ico" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
-    <assemblyIdentity name="HaftRokh" version="1.2.1.0" language="neutral" processorArchitecture="msil" />
+    <assemblyIdentity name="HaftRokh" version="1.3.1.0" language="neutral" processorArchitecture="msil" />
     <commandLine file="HaftRokh.exe" parameters="" />
   </entryPoint>
   <trustInfo>
@@ -91,6 +91,30 @@
     </dependentAssembly>
   </dependency>
   <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuDropdown.dll" size="52224">
+      <assemblyIdentity name="Bunifu.UI.WinForms.BunifuDropdown" version="4.1.1.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>Dh67m+PTQflMjQ8FOjUrKLCsl8Yb4iInaLRJcyspCAY=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuGradientPanel.dll" size="62464">
+      <assemblyIdentity name="Bunifu.UI.WinForms.BunifuGradientPanel" version="4.1.1.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>6i4QxTaWz3z23P3UUalxsBdwuOwjJ0PiSahyJvZNcZ4=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Bunifu.UI.WinForms.BunifuPanel.dll" size="44032">
       <assemblyIdentity name="Bunifu.UI.WinForms.BunifuPanel" version="4.1.1.0" publicKeyToken="E8E24CCD28363FE9" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -139,14 +163,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaftRokh.exe" size="7954432">
-      <assemblyIdentity name="HaftRokh" version="1.2.1.0" language="neutral" processorArchitecture="msil" />
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="HaftRokh.exe" size="10202112">
+      <assemblyIdentity name="HaftRokh" version="1.3.1.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>474/iWKQbIf3rCheVX7HEzUQQD2xJDbSakzUZAE+Zfs=</dsig:DigestValue>
+        <dsig:DigestValue>R0HOIi609UYFNyP78ZJpUlOJ0XySOWnM+07jX/mtvG0=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -171,13 +195,13 @@
       <dsig:DigestValue>elR+RsiN06L32+OLJ4znNEVjAWqLs6HEX1B8YDnBz34=</dsig:DigestValue>
     </hash>
   </file>
-  <file name="HaftRokh.exe.config" size="2072">
+  <file name="HaftRokh.exe.config" size="2287">
     <hash>
       <dsig:Transforms>
         <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-      <dsig:DigestValue>Kh2G/AHwaLsh/nkxolflKjeAWj23Jz+yX8CVJikc0Hc=</dsig:DigestValue>
+      <dsig:DigestValue>1zGCNMTah6JPPF/Wa3Jx2o/MM5oJLEEgX17qsMHGKw8=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

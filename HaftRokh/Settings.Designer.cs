@@ -28,17 +28,20 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Settings));
             Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges1 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
+            Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges borderEdges2 = new Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderEdges();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState1 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState2 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState toggleState3 = new Bunifu.UI.WinForms.BunifuToggleSwitch.ToggleState();
             this.Topbar = new Bunifu.UI.WinForms.BunifuPanel();
             this.LabelName = new System.Windows.Forms.Label();
             this.Exit = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
-            this.Elipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Panel = new Bunifu.UI.WinForms.BunifuPanel();
+            this.ButtonForceUpdate = new Bunifu.UI.WinForms.BunifuButton.BunifuButton();
+            this.DropdownDateFormat = new Bunifu.UI.WinForms.BunifuDropdown();
+            this.LabelDateFormat = new System.Windows.Forms.Label();
+            this.bunifuSeparator1 = new Bunifu.UI.WinForms.BunifuSeparator();
             this.Notice = new System.Windows.Forms.Label();
             this.ToggleCompatibility = new Bunifu.UI.WinForms.BunifuToggleSwitch();
             this.LabelCompatibility = new System.Windows.Forms.Label();
@@ -171,11 +174,6 @@
             this.Exit.UseDefaultRadiusAndThickness = true;
             this.Exit.Click += new System.EventHandler(this.Exit_Click);
             // 
-            // Elipse
-            // 
-            this.Elipse.ElipseRadius = 25;
-            this.Elipse.TargetControl = this;
-            // 
             // Panel
             // 
             this.Panel.BackgroundColor = System.Drawing.Color.White;
@@ -184,6 +182,10 @@
             this.Panel.BorderColor = System.Drawing.Color.Transparent;
             this.Panel.BorderRadius = 25;
             this.Panel.BorderThickness = 1;
+            this.Panel.Controls.Add(this.ButtonForceUpdate);
+            this.Panel.Controls.Add(this.DropdownDateFormat);
+            this.Panel.Controls.Add(this.LabelDateFormat);
+            this.Panel.Controls.Add(this.bunifuSeparator1);
             this.Panel.Controls.Add(this.Notice);
             this.Panel.Controls.Add(this.ToggleCompatibility);
             this.Panel.Controls.Add(this.LabelCompatibility);
@@ -191,8 +193,173 @@
             this.Panel.Location = new System.Drawing.Point(14, 42);
             this.Panel.Name = "Panel";
             this.Panel.ShowBorders = true;
-            this.Panel.Size = new System.Drawing.Size(476, 118);
+            this.Panel.Size = new System.Drawing.Size(476, 172);
             this.Panel.TabIndex = 4;
+            // 
+            // ButtonForceUpdate
+            // 
+            this.ButtonForceUpdate.AllowAnimations = true;
+            this.ButtonForceUpdate.AllowMouseEffects = true;
+            this.ButtonForceUpdate.AllowToggling = false;
+            this.ButtonForceUpdate.AnimationSpeed = 200;
+            this.ButtonForceUpdate.AutoGenerateColors = false;
+            this.ButtonForceUpdate.AutoRoundBorders = false;
+            this.ButtonForceUpdate.AutoSizeLeftIcon = true;
+            this.ButtonForceUpdate.AutoSizeRightIcon = true;
+            this.ButtonForceUpdate.BackColor = System.Drawing.Color.Transparent;
+            this.ButtonForceUpdate.BackColor1 = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonForceUpdate.BackgroundImage")));
+            this.ButtonForceUpdate.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ButtonForceUpdate.ButtonText = "به روز رسانی مناسبت‌ ها";
+            this.ButtonForceUpdate.ButtonTextMarginLeft = 0;
+            this.ButtonForceUpdate.ColorContrastOnClick = 45;
+            this.ButtonForceUpdate.ColorContrastOnHover = 45;
+            this.ButtonForceUpdate.Cursor = System.Windows.Forms.Cursors.Hand;
+            borderEdges2.BottomLeft = true;
+            borderEdges2.BottomRight = true;
+            borderEdges2.TopLeft = true;
+            borderEdges2.TopRight = true;
+            this.ButtonForceUpdate.CustomizableEdges = borderEdges2;
+            this.ButtonForceUpdate.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.ButtonForceUpdate.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.ButtonForceUpdate.DisabledFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ButtonForceUpdate.DisabledForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.ButtonForceUpdate.FocusState = Bunifu.UI.WinForms.BunifuButton.BunifuButton.ButtonStates.Pressed;
+            this.ButtonForceUpdate.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.ButtonForceUpdate.ForeColor = System.Drawing.Color.White;
+            this.ButtonForceUpdate.IconLeftAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ButtonForceUpdate.IconLeftCursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonForceUpdate.IconLeftPadding = new System.Windows.Forms.Padding(11, 3, 3, 3);
+            this.ButtonForceUpdate.IconMarginLeft = 11;
+            this.ButtonForceUpdate.IconPadding = 10;
+            this.ButtonForceUpdate.IconRightAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.ButtonForceUpdate.IconRightCursor = System.Windows.Forms.Cursors.Default;
+            this.ButtonForceUpdate.IconRightPadding = new System.Windows.Forms.Padding(3, 3, 7, 3);
+            this.ButtonForceUpdate.IconSize = 25;
+            this.ButtonForceUpdate.IdleBorderColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.IdleBorderRadius = 1;
+            this.ButtonForceUpdate.IdleBorderThickness = 1;
+            this.ButtonForceUpdate.IdleFillColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.IdleIconLeftImage = null;
+            this.ButtonForceUpdate.IdleIconRightImage = null;
+            this.ButtonForceUpdate.IndicateFocus = false;
+            this.ButtonForceUpdate.Location = new System.Drawing.Point(18, 129);
+            this.ButtonForceUpdate.Name = "ButtonForceUpdate";
+            this.ButtonForceUpdate.OnDisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(191)))), ((int)(((byte)(191)))), ((int)(((byte)(191)))));
+            this.ButtonForceUpdate.OnDisabledState.BorderRadius = 1;
+            this.ButtonForceUpdate.OnDisabledState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ButtonForceUpdate.OnDisabledState.BorderThickness = 1;
+            this.ButtonForceUpdate.OnDisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.ButtonForceUpdate.OnDisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(168)))), ((int)(((byte)(160)))), ((int)(((byte)(168)))));
+            this.ButtonForceUpdate.OnDisabledState.IconLeftImage = null;
+            this.ButtonForceUpdate.OnDisabledState.IconRightImage = null;
+            this.ButtonForceUpdate.onHoverState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.onHoverState.BorderRadius = 1;
+            this.ButtonForceUpdate.onHoverState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ButtonForceUpdate.onHoverState.BorderThickness = 1;
+            this.ButtonForceUpdate.onHoverState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.onHoverState.ForeColor = System.Drawing.Color.White;
+            this.ButtonForceUpdate.onHoverState.IconLeftImage = null;
+            this.ButtonForceUpdate.onHoverState.IconRightImage = null;
+            this.ButtonForceUpdate.OnIdleState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.OnIdleState.BorderRadius = 1;
+            this.ButtonForceUpdate.OnIdleState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ButtonForceUpdate.OnIdleState.BorderThickness = 1;
+            this.ButtonForceUpdate.OnIdleState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.OnIdleState.ForeColor = System.Drawing.Color.White;
+            this.ButtonForceUpdate.OnIdleState.IconLeftImage = null;
+            this.ButtonForceUpdate.OnIdleState.IconRightImage = null;
+            this.ButtonForceUpdate.OnPressedState.BorderColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.OnPressedState.BorderRadius = 1;
+            this.ButtonForceUpdate.OnPressedState.BorderStyle = Bunifu.UI.WinForms.BunifuButton.BunifuButton.BorderStyles.Solid;
+            this.ButtonForceUpdate.OnPressedState.BorderThickness = 1;
+            this.ButtonForceUpdate.OnPressedState.FillColor = System.Drawing.Color.DodgerBlue;
+            this.ButtonForceUpdate.OnPressedState.ForeColor = System.Drawing.Color.White;
+            this.ButtonForceUpdate.OnPressedState.IconLeftImage = null;
+            this.ButtonForceUpdate.OnPressedState.IconRightImage = null;
+            this.ButtonForceUpdate.Size = new System.Drawing.Size(150, 32);
+            this.ButtonForceUpdate.TabIndex = 103;
+            this.ButtonForceUpdate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonForceUpdate.TextAlignment = System.Windows.Forms.HorizontalAlignment.Center;
+            this.ButtonForceUpdate.TextMarginLeft = 0;
+            this.ButtonForceUpdate.TextPadding = new System.Windows.Forms.Padding(0);
+            this.ButtonForceUpdate.UseDefaultRadiusAndThickness = true;
+            this.ButtonForceUpdate.Click += new System.EventHandler(this.ButtonForceUpdate_Click);
+            // 
+            // DropdownDateFormat
+            // 
+            this.DropdownDateFormat.BackColor = System.Drawing.Color.Transparent;
+            this.DropdownDateFormat.BackgroundColor = System.Drawing.Color.White;
+            this.DropdownDateFormat.BorderColor = System.Drawing.Color.Silver;
+            this.DropdownDateFormat.BorderRadius = 1;
+            this.DropdownDateFormat.Color = System.Drawing.Color.Silver;
+            this.DropdownDateFormat.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.DropdownDateFormat.Direction = Bunifu.UI.WinForms.BunifuDropdown.Directions.Down;
+            this.DropdownDateFormat.DisabledBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.DropdownDateFormat.DisabledBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(204)))), ((int)(((byte)(204)))), ((int)(((byte)(204)))));
+            this.DropdownDateFormat.DisabledColor = System.Drawing.Color.FromArgb(((int)(((byte)(240)))), ((int)(((byte)(240)))), ((int)(((byte)(240)))));
+            this.DropdownDateFormat.DisabledForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.DropdownDateFormat.DisabledIndicatorColor = System.Drawing.Color.DarkGray;
+            this.DropdownDateFormat.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.DropdownDateFormat.DropdownBorderThickness = Bunifu.UI.WinForms.BunifuDropdown.BorderThickness.Thin;
+            this.DropdownDateFormat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DropdownDateFormat.DropDownTextAlign = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Right;
+            this.DropdownDateFormat.FillDropDown = true;
+            this.DropdownDateFormat.FillIndicator = false;
+            this.DropdownDateFormat.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DropdownDateFormat.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.DropdownDateFormat.ForeColor = System.Drawing.Color.Black;
+            this.DropdownDateFormat.FormattingEnabled = true;
+            this.DropdownDateFormat.Icon = null;
+            this.DropdownDateFormat.IndicatorAlignment = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Left;
+            this.DropdownDateFormat.IndicatorColor = System.Drawing.Color.Gray;
+            this.DropdownDateFormat.IndicatorLocation = Bunifu.UI.WinForms.BunifuDropdown.Indicator.Left;
+            this.DropdownDateFormat.ItemBackColor = System.Drawing.Color.White;
+            this.DropdownDateFormat.ItemBorderColor = System.Drawing.Color.White;
+            this.DropdownDateFormat.ItemForeColor = System.Drawing.Color.Black;
+            this.DropdownDateFormat.ItemHeight = 26;
+            this.DropdownDateFormat.ItemHighLightColor = System.Drawing.Color.DodgerBlue;
+            this.DropdownDateFormat.ItemHighLightForeColor = System.Drawing.Color.White;
+            this.DropdownDateFormat.Items.AddRange(new object[] {
+            "YYYY/MM/DD",
+            "YYYY-MM-DD"});
+            this.DropdownDateFormat.ItemTopMargin = 3;
+            this.DropdownDateFormat.Location = new System.Drawing.Point(212, 129);
+            this.DropdownDateFormat.Name = "DropdownDateFormat";
+            this.DropdownDateFormat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.DropdownDateFormat.Size = new System.Drawing.Size(160, 32);
+            this.DropdownDateFormat.TabIndex = 5;
+            this.DropdownDateFormat.Text = null;
+            this.DropdownDateFormat.TextAlignment = Bunifu.UI.WinForms.BunifuDropdown.TextAlign.Right;
+            this.DropdownDateFormat.TextLeftMargin = 5;
+            this.DropdownDateFormat.SelectedIndexChanged += new System.EventHandler(this.DropdownDateFormat_SelectedIndexChanged);
+            // 
+            // LabelDateFormat
+            // 
+            this.LabelDateFormat.AutoSize = true;
+            this.LabelDateFormat.BackColor = System.Drawing.Color.Transparent;
+            this.LabelDateFormat.Location = new System.Drawing.Point(378, 135);
+            this.LabelDateFormat.Name = "LabelDateFormat";
+            this.LabelDateFormat.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
+            this.LabelDateFormat.Size = new System.Drawing.Size(83, 25);
+            this.LabelDateFormat.TabIndex = 102;
+            this.LabelDateFormat.Text = "قالب تاریخ:";
+            // 
+            // bunifuSeparator1
+            // 
+            this.bunifuSeparator1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuSeparator1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuSeparator1.BackgroundImage")));
+            this.bunifuSeparator1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuSeparator1.DashCap = Bunifu.UI.WinForms.BunifuSeparator.CapStyles.Flat;
+            this.bunifuSeparator1.LineColor = System.Drawing.Color.Silver;
+            this.bunifuSeparator1.LineStyle = Bunifu.UI.WinForms.BunifuSeparator.LineStyles.Solid;
+            this.bunifuSeparator1.LineThickness = 1;
+            this.bunifuSeparator1.Location = new System.Drawing.Point(18, 112);
+            this.bunifuSeparator1.Margin = new System.Windows.Forms.Padding(4, 6, 4, 6);
+            this.bunifuSeparator1.Name = "bunifuSeparator1";
+            this.bunifuSeparator1.Orientation = Bunifu.UI.WinForms.BunifuSeparator.LineOrientation.Horizontal;
+            this.bunifuSeparator1.Size = new System.Drawing.Size(438, 14);
+            this.bunifuSeparator1.TabIndex = 101;
             // 
             // Notice
             // 
@@ -276,7 +443,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(240)))), ((int)(((byte)(245)))));
-            this.ClientSize = new System.Drawing.Size(513, 177);
+            this.ClientSize = new System.Drawing.Size(513, 227);
             this.Controls.Add(this.Panel);
             this.Controls.Add(this.Topbar);
             this.Font = new System.Drawing.Font("Vazir", 12F);
@@ -301,11 +468,14 @@
         private Bunifu.UI.WinForms.BunifuPanel Topbar;
         private System.Windows.Forms.Label LabelName;
         private Bunifu.UI.WinForms.BunifuButton.BunifuButton Exit;
-        private Bunifu.Framework.UI.BunifuElipse Elipse;
         private Bunifu.UI.WinForms.BunifuPanel Panel;
         private System.Windows.Forms.Label Title;
         private System.Windows.Forms.Label Notice;
         private Bunifu.UI.WinForms.BunifuToggleSwitch ToggleCompatibility;
         private System.Windows.Forms.Label LabelCompatibility;
+        private Bunifu.UI.WinForms.BunifuDropdown DropdownDateFormat;
+        private System.Windows.Forms.Label LabelDateFormat;
+        private Bunifu.UI.WinForms.BunifuSeparator bunifuSeparator1;
+        private Bunifu.UI.WinForms.BunifuButton.BunifuButton ButtonForceUpdate;
     }
 }

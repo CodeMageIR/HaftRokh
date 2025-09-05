@@ -87,6 +87,12 @@
     <Reference Include="Bunifu.UI.WinForms.BunifuCheckBox">
       <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuCheckBox.dll</HintPath>
     </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuDropdown">
+      <HintPath>..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuDropdown.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu.UI.WinForms.BunifuGradientPanel">
+      <HintPath>..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuGradientPanel.dll</HintPath>
+    </Reference>
     <Reference Include="Bunifu.UI.WinForms.BunifuPanel">
       <HintPath>..\..\..\..\..\Desktop\programs\Bunifu Lastest Components\Bunifu UI WinForms v4.1.1\Bunifu.UI.WinForms.BunifuPanel.dll</HintPath>
     </Reference>
@@ -122,6 +128,13 @@
     <Compile Include="About.Designer.cs">
       <DependentUpon>About.cs</DependentUpon>
     </Compile>
+    <Compile Include="Core.cs" />
+    <Compile Include="Calendar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Calendar.Designer.cs">
+      <DependentUpon>Calendar.cs</DependentUpon>
+    </Compile>
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,6 +151,9 @@
     </Compile>
     <EmbeddedResource Include="About.resx">
       <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Calendar.resx">
+      <DependentUpon>Calendar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
@@ -266,6 +282,48 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="calendar.ico" />
+    <None Include="Resources\Red31.ico" />
+    <None Include="Resources\Red30.ico" />
+    <None Include="Resources\Red29.ico" />
+    <None Include="Resources\Red28.ico" />
+    <None Include="Resources\Red27.ico" />
+    <None Include="Resources\Red26.ico" />
+    <None Include="Resources\Red25.ico" />
+    <None Include="Resources\Red24.ico" />
+    <None Include="Resources\Red23.ico" />
+    <None Include="Resources\Red22.ico" />
+    <None Include="Resources\Red21.ico" />
+    <None Include="Resources\Red20.ico" />
+    <None Include="Resources\Red19.ico" />
+    <None Include="Resources\Red18.ico" />
+    <None Include="Resources\Red17.ico" />
+    <None Include="Resources\Red16.ico" />
+    <None Include="Resources\Red15.ico" />
+    <None Include="Resources\Red14.ico" />
+    <None Include="Resources\Red13.ico" />
+    <None Include="Resources\Red12.ico" />
+    <None Include="Resources\Red11.ico" />
+    <None Include="Resources\Red10.ico" />
+    <None Include="Resources\Red9.ico" />
+    <None Include="Resources\Red8.ico" />
+    <None Include="Resources\Red7.ico" />
+    <None Include="Resources\Red6.ico" />
+    <None Include="Resources\Red5.ico" />
+    <None Include="Resources\Red4.ico" />
+    <None Include="Resources\Red3.ico" />
+    <None Include="Resources\Red2.ico" />
+    <None Include="Resources\Red1.ico" />
+    <None Include="Resources\holiday 10.ico" />
+    <None Include="Resources\finalred.ico" />
+    <None Include="Resources\base.ico" />
+    <None Include="Resources\whitered.ico" />
+    <None Include="Resources\blackred.ico" />
+    <None Include="Resources\reddd 10.ico" />
+    <None Include="Resources\red 10.ico" />
+    <None Include="Resources\2.ico" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\caret-left.png" />
+    <None Include="Resources\caret-right %283%29.png" />
     <None Include="Resources\telegram.png" />
     <None Include="Resources\github.png" />
     <None Include="Resources\envelope.png" />

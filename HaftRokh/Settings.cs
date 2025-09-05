@@ -24,6 +24,7 @@ namespace HaftRokh
         public Settings()
         {
             InitializeComponent();
+            (new Core.DropShadow()).ApplyShadows(this);
         }
         private void ToggleCompatibility_CheckedChanged(object sender, Bunifu.UI.WinForms.BunifuToggleSwitch.CheckedChangedEventArgs e)
         {
@@ -33,6 +34,13 @@ namespace HaftRokh
         private void Settings_Load(object sender, EventArgs e)
         {
             ToggleCompatibility.Checked = Properties.Settings.Default.Compatibility;
+            if(Properties.Settings.Default.DateFormat.Contains("-"))
+            {
+                DropdownDateFormat.SelectedIndex = 1;
+            }
+            else
+                DropdownDateFormat.SelectedIndex = 0;
+
         }
         private void Exit_Click(object sender, EventArgs e)
         {
@@ -44,6 +52,32 @@ namespace HaftRokh
             {
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        private void DropdownDateFormat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.DateFormat = DropdownDateFormat.Text;
+            Properties.Settings.Default.Save();
+        }
+
+        private void ButtonForceUpdate_Click(object sender, EventArgs e)
+        {
+            ButtonForceUpdate.Text = "در حال انجام";
+            var task = Task.Factory.StartNew(() => Core.ForceUpdate());
+
+            Task.WaitAll(task);
+
+            if (task.Result)
+            {
+                DialogResult Result = MessageBox.Show("آپدیت با موفقیت انجام شد!\nپس از کلیک بر روی گزینه OK، برنامه به صورت اتوماتیک ری استارت خواهد شد.", "موفق", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (Result == DialogResult.OK)
+                {
+                    Application.Restart();
+                }
+            }
+            else
+            {
+                MessageBox.Show("آپدیت انجام نشد!", "خطا", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }

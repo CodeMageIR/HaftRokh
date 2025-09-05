@@ -8,5 +8,11 @@
     <Setting Name="FirstTime" Type="System.Boolean" Scope="User">
       <Value Profile="(Default)">True</Value>
     </Setting>
+    <Setting Name="HolidayError" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="DateFormat" Type="System.String" Scope="User">
+      <Value Profile="(Default)">YYYY/MM/DD</Value>
+    </Setting>
   </Settings>
 </SettingsFile>

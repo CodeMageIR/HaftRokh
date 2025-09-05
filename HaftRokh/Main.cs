@@ -1,16 +1,25 @@
-﻿using Microsoft.Win32;
+﻿using HaftRokh.Properties;
+using Microsoft.Win32;
+using Newtonsoft.Json.Linq;
 using System;
 using System.Diagnostics;
+using System.Linq;
 using System.Resources;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
-using HaftRokh.Properties;
 
 namespace HaftRokh
 {
 
     public partial class Main : Form
     {
+        
+        static int Year = Core.Persian.GetYear(DateTime.Now);
+        static int Month = Core.Persian.GetMonth(DateTime.Now);
+        static int Day = Core.Persian.GetDayOfMonth(DateTime.Now);
+        string Today = $"{Year:0000}/{Month:00}/{Day:00}";
+        JArray Holidays;
+
         private static ResourceManager resourceMan;
         internal static ResourceManager ResourceManager
         {
@@ -45,44 +54,17 @@ namespace HaftRokh
             }
         }
         private readonly RegistryKey Startup = Registry.CurrentUser.OpenSubKey("SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run", true);
-        private string GetDayOfWeekName(DateTime date)
-        {
-            switch (date.DayOfWeek)
-            {
-                case DayOfWeek.Saturday: return "شنبه";
-                case DayOfWeek.Sunday: return "يکشنبه";
-                case DayOfWeek.Monday: return "دوشنبه";
-                case DayOfWeek.Tuesday: return "سه‏ شنبه";
-                case DayOfWeek.Wednesday: return "چهارشنبه";
-                case DayOfWeek.Thursday: return "پنجشنبه";
-                case DayOfWeek.Friday: return "جمعه";
-                default: return "";
-            }
-        }
-        private string GetMonthName(int Month)
-        {
-            switch (Month)
-            {
-                case 1: return "فروردین";
-                case 2: return "اردیبهشت";
-                case 3: return "خرداد";
-                case 4: return "تیر";
-                case 5: return "مرداد";
-                case 6: return "شهریور";
-                case 7: return "مهر";
-                case 8: return "آبان";
-                case 9: return "آذر";
-                case 10: return "دی";
-                case 11: return "بهمن";
-                case 12: return "اسفند";
-                default: return "";
-            }
-        }
+        
         private void Main_Load(object sender, EventArgs e)
         {
+            try
+            {
+                Holidays = (JArray)Core.Holidays.SelectToken(Year.ToString());
+            }
+            catch { }
             Hide();
 
-            if(Properties.Settings.Default.FirstTime)
+            if (Properties.Settings.Default.FirstTime)
             {
                 TrayIcon.BalloonTipTitle = "هفت رخ";
                 TrayIcon.BalloonTipText = "اگر ویجت برای شما نمایان نیست، از بخش System Tray آیکون برنامه را به بیرون از لیست بکشید";
@@ -103,31 +85,51 @@ namespace HaftRokh
         {
             Close();
         }
-        private System.Drawing.Icon GetIcon(bool DarkMode, int DayOfMonth)
+        private System.Drawing.Icon GetIcon(bool DarkMode, int DayOfMonth, bool Holiday = false)
         {
-            if (DarkMode)
+            if (Holiday)
             {
-                object obj = ResourceManager.GetObject("Icondark" + DayOfMonth, resourceCulture);
+                object obj = ResourceManager.GetObject("Red" + DayOfMonth, resourceCulture);
                 return ((System.Drawing.Icon)(obj));
             }
             else
             {
-                object obj = ResourceManager.GetObject("Icon" + DayOfMonth, resourceCulture);
-                return ((System.Drawing.Icon)(obj));
+                if (DarkMode)
+                {
+                    object obj = ResourceManager.GetObject("Icondark" + DayOfMonth, resourceCulture);
+                    return ((System.Drawing.Icon)(obj));
+                }
+                else
+                {
+                    object obj = ResourceManager.GetObject("Icon" + DayOfMonth, resourceCulture);
+                    return ((System.Drawing.Icon)(obj));
+                }
             }
         }
         private void Timer_Tick(object sender, EventArgs e)
         {
-            System.Globalization.PersianCalendar PersianDate = new System.Globalization.PersianCalendar();
-            TrayIcon.Text = string.Format("{3}، {2} {1} {0}", PersianDate.GetYear(DateTime.Now), GetMonthName(PersianDate.GetMonth(DateTime.Now)), PersianDate.GetDayOfMonth(DateTime.Now), GetDayOfWeekName(DateTime.Now));
-            if(!Properties.Settings.Default.Compatibility)
+
+            TrayIcon.Text = Core.ToPersianDigits(string.Format("{3}، {2} {1} {0}", Year, Core.GetMonthName(Month), Day, Core.GetDayOfWeekName(DateTime.Now)));
+            if (Holidays.Any(x => x["date"]?.ToString() == Today))
             {
-                TrayIcon.Icon = GetIcon(!ShouldSystemUseDarkMode(), PersianDate.GetDayOfMonth(DateTime.Now));
+                try
+                {
+                    TrayIcon.Icon = GetIcon(!ShouldSystemUseDarkMode(), Day, true);
+                }
+                catch { }
             }
             else
             {
-                TrayIcon.Icon = GetIcon(ShouldSystemUseDarkMode(), PersianDate.GetDayOfMonth(DateTime.Now));
+                if (!Properties.Settings.Default.Compatibility)
+                {
+                    TrayIcon.Icon = GetIcon(!ShouldSystemUseDarkMode(), Day);
+                }
+                else
+                {
+                    TrayIcon.Icon = GetIcon(ShouldSystemUseDarkMode(), Day);
+                }
             }
+
         }
         private void TrayIcon_DoubleClick(object sender, EventArgs e)
         {
@@ -142,6 +144,28 @@ namespace HaftRokh
         {
             Form setting = new Settings();
             setting.ShowDialog();
+        }
+        private void TrayIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                Form Calendar = new Calendar();
+                if (HaftRokh.Calendar.Displayed == false)
+                {
+                    Calendar.Show();
+                    Calendar.Activate();
+                }
+                else
+                {
+                    Calendar.Close();
+                    HaftRokh.Calendar.Displayed = false;
+                }
+            }
+        }
+
+        private void CopyToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Clipboard.SetText(Properties.Settings.Default.DateFormat.Replace("YYYY", Year.ToString()).Replace("MM", Month.ToString()).Replace("DD", Day.ToString()));
         }
     }
 }
