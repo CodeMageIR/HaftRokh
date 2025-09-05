@@ -9,14 +9,18 @@
 هفت‌رخ یک برنامه تقویم فارسی است که با طراحی ساده و کاربرپسند خود، تجربه‌ای خاص از مشاهده تاریخ‌ شمسی در محیط ویندوز را فراهم می‌آورد. این برنامه می‌تواند بدون دستکاری تاریخ اصلی ویندوز یک ویجت تاریخ شمسی کوچک را در بخش System Tray تسکبار به نمایش بگذارد تا به وسیله آن کاربران بتوانند از تاریخ امروز در تقویم شمسی مطلع شوند.
 
 <div align = "center">
-<img src="https://raw.githubusercontent.com/CodeMageIR/HaftRokh/master/Assets/images/Haftrokh.png">
+<!--<img src="https://raw.githubusercontent.com/CodeMageIR/HaftRokh/master/Assets/images/Haftrokh.png">-->
+<img src="https://raw.githubusercontent.com/CodeMageIR/HaftRokh/master/Assets/images/Haftrokh_calendar.png">
 </div>
 
 <div align = "right" dir = "rtl">
 
 <h3>ویژگی‌ها</h3> 
-• نمایش تاریخ روز به صورت یک ویجت کوچک
+• نمایش تاریخ روز به صورت یک ویجت کوچک در تسک بار
 <br>
+•  تقویم شمسی با نمایش مناسبت ها و تعطیلات
+<br>
+
 • سبک و کم مصرف
 <br>
 • اجرا به همراه استارتاپ ویندوز
